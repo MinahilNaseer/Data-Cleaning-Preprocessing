@@ -1,81 +1,77 @@
-📌 Assignment 5 – Data Cleaning & Preprocessing
+<h1>📌 Assignment 5 – Data Cleaning & Preprocessing</h1>
 
-🎯 Objective
+<h2>🎯 Objective</h2>
+<p>
+Ensure <b>data accuracy and consistency</b> by cleaning and transforming raw internship/job posting datasets into a structured format ready for <b>analysis and visualization</b>.
+</p>
 
-Ensure data accuracy and consistency by cleaning and transforming raw internship/job posting datasets into a structured format ready for analysis and visualization.
+<hr>
 
-📊 Dataset Overview
+<h2>📊 Dataset Overview</h2>
+<p>The dataset consisted of internship/job postings with the following details:</p>
+<ul>
+  <li><b>Job Title</b></li>
+  <li><b>Job Type</b></li>
+  <li><b>Company Name</b></li>
+  <li><b>Location</b> (City, State)</li>
+  <li><b>Stipend</b></li>
+  <li><b>Duration</b></li>
+  <li><b>Number of Openings</b></li>
+  <li><b>Dates</b> (Posted Date, Start Date, Last Date to Apply)</li>
+</ul>
 
-The dataset consisted of internship/job postings with the following details:
+<p><b>Issues Identified:</b></p>
+<ul>
+  <li>Missing values across multiple columns</li>
+  <li>Inconsistent formats in date and stipend fields</li>
+  <li>Duplicate records</li>
+  <li>Text fields mixed with numerical data (e.g., <code>"10000 /month"</code>)</li>
+</ul>
 
-Job Title
+<hr>
 
-Job Type
+<h2>🔧 Data Cleaning & Preprocessing Steps</h2>
+<ul>
+  <li>🗑️ Dropped unnecessary index column and removed duplicates</li>
+  <li>🔄 Handled missing values:
+    <ul>
+      <li><code>"Unknown"</code> or <code>"No Info"</code> for categorical/text fields</li>
+      <li>Median values for numerical fields</li>
+    </ul>
+  </li>
+  <li>📅 Converted date columns into proper datetime format</li>
+  <li>💰 Extracted numeric stipend values from text (<code>"10000 /month"</code> → <code>10000</code>)</li>
+  <li>⏳ Standardized internship duration and openings into numeric form</li>
+  <li>🚀 Created a flag for <b>Immediate Start</b> internships</li>
+  <li>💾 Saved the final dataset as <b>final_cleaned_internships.csv</b></li>
+</ul>
 
-Company Name
+<hr>
 
-Location (City, State)
+<h2>🛠️ Tools & Technologies</h2>
+<ul>
+  <li><b>Python</b> – Data preprocessing</li>
+  <li><b>Pandas, NumPy</b> – Data cleaning & transformation</li>
+  <li><b>Google Colab</b> – Development environment</li>
+  <li><b>Power BI</b> – For visualization (next step after cleaning)</li>
+</ul>
 
-Stipend
+<hr>
 
-Duration
+<h2>✅ Outcome</h2>
+<ul>
+  <li>A <b>cleaned and structured dataset</b> ready for analysis</li>
+  <li>Removed noise and inconsistencies → <b>more accurate insights</b></li>
+  <li>Prepared for use in <b>Power BI dashboards</b> and <b>Machine Learning models</b></li>
+</ul>
 
-Number of Openings
+<hr>
 
-Dates (Posted Date, Start Date, Last Date to Apply)
+<h2>📂 Files</h2>
+<ul>
+  <li><code>AICK_internship_data.csv</code> → Original dataset</li>
+  <li><code>final_cleaned_internships.csv</code> → Cleaned dataset (processed)</li>
+  <li><code>notebooks/assignment5_cleaning.ipynb</code> → Code used for preprocessing</li>
+</ul>
 
-Issues Identified:
-
-Missing values across multiple columns
-
-Inconsistent formats in date and stipend fields
-
-Duplicate records
-
-Text fields mixed with numerical data (e.g., "10000 /month")
-
-🔧 Data Cleaning & Preprocessing Steps
-
-🗑️ Dropped unnecessary index column and removed duplicates
-
-🔄 Handled missing values:
-
-"Unknown" or "No Info" for categorical/text fields
-
-Median values for numerical fields
-
-📅 Converted date columns into proper datetime format
-
-💰 Extracted numeric stipend values from text (e.g., "10000 /month" → 10000)
-
-⏳ Standardized internship duration and openings into numeric form
-
-🚀 Created a flag for Immediate Start internships
-
-💾 Saved the final dataset as final_cleaned_internships.csv
-
-🛠️ Tools & Technologies
-
-Python – Data preprocessing
-
-Pandas, NumPy – Data cleaning & transformation
-
-Google Colab – Development environment
-
-Power BI – For visualization (next step after cleaning)
-
-✅ Outcome
-
-A cleaned and structured dataset ready for analysis
-
-Removed noise and inconsistencies → more accurate insights
-
-Prepared for use in Power BI dashboards and Machine Learning models
-
-📂 Files
-
-AICK_internship_data.csv → Original dataset
-
-final_cleaned_internships.csv → Cleaned dataset (processed)
-
-notebooks/assignment5_cleaning.ipynb → Code used for preprocessing
+<hr>
