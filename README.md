@@ -1,4 +1,5 @@
 📌 Assignment 5 – Data Cleaning & Preprocessing
+
 🎯 Objective
 
 Ensure data accuracy and consistency by cleaning and transforming raw internship/job posting datasets into a structured format ready for analysis and visualization.
@@ -29,7 +30,7 @@ Missing values across multiple columns
 
 Inconsistent formats in date and stipend fields
 
-Presence of duplicate records
+Duplicate records
 
 Text fields mixed with numerical data (e.g., "10000 /month")
 
@@ -37,7 +38,7 @@ Text fields mixed with numerical data (e.g., "10000 /month")
 
 🗑️ Dropped unnecessary index column and removed duplicates
 
-🔄 Handled missing values with appropriate strategies:
+🔄 Handled missing values:
 
 "Unknown" or "No Info" for categorical/text fields
 
@@ -51,7 +52,7 @@ Median values for numerical fields
 
 🚀 Created a flag for Immediate Start internships
 
-💾 Saved final dataset as final_cleaned_internships.csv
+💾 Saved the final dataset as final_cleaned_internships.csv
 
 🛠️ Tools & Technologies
 
@@ -61,15 +62,15 @@ Pandas, NumPy – Data cleaning & transformation
 
 Google Colab – Development environment
 
-Power BI – (for visualization, next step after cleaning)
+Power BI – For visualization (next step after cleaning)
 
 ✅ Outcome
 
 A cleaned and structured dataset ready for analysis
 
-Removed noise and inconsistencies for more accurate insights
+Removed noise and inconsistencies → more accurate insights
 
-Dataset prepared for use in Power BI dashboards and Machine Learning models
+Prepared for use in Power BI dashboards and Machine Learning models
 
 📂 Files
 
@@ -77,4 +78,4 @@ AICK_internship_data.csv → Original dataset
 
 final_cleaned_internships.csv → Cleaned dataset (processed)
 
-notebooks/assignment5_cleaning.ipynb → Code used for data preprocessing
+notebooks/assignment5_cleaning.ipynb → Code used for preprocessing
